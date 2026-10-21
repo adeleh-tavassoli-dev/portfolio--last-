@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #f8f4ec;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  
+}
+header::before{
+    content: "";
+    position: absolute;
+    width: 720px;
+    height:450px;
+
+    background: #96634c;
+    border-radius: 20px;
+
+    top: 30%;
+    left: 3%;
+}
+
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.navbar {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+
+.logo {
+  /* height: 80px; */
+  width: 310px;
+  /* height: 200px; */
+  /* border: 1px solid black; */
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  display: flex;
+  margin-right: 100px;
+}
+
+.menu li {
+  list-style: none;
+  margin: 0px 30px;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #463223;
+  font-weight: 500;
+}
+
+.menu li a:hover {
+  color: #17110d;
+}
+
+.search-box {
+  position: relative;
+  height: 50px;
+  width: 250px;
+}
+
+.search-box input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  outline: none;
+  border: 2px solid #463223;
+  border-radius: 10px;
+  padding: 0 10px 0 50px;
+  color: #463223;
+  font-size: 20px;
+}
+
+.search-box a{
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    border-right: #463223 2px solid;
+    padding-right: 5px;
+    color: #463223;
+}
+
+.content{
+    position: absolute;
+    top: 33%;
+    left: 4%;
+}
+
+.text-content .text{
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    /* color: #463223; */
+}
+
+.text-content .name{
+    font-size: 75px;
+    font-weight: 500;
+    /* color: #463223; */
+    margin: -20px 0 25px 50px;
+    
+}
+
+.text-content .job{
+font-size: 40px;
+display: flex;
+margin-bottom: 50px;
+margin-left: 11px;
+}
+
+
+.text-content .typing-text{
+    margin-left: 20px; 
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid;
+   animation: typing 7s steps(22) infinite;
+}
+
+@keyframes typing {
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 22ch;
+    }
+    100%{
+        width: 0ch;
+    }
+}
+
+.buttons{
+   margin: 70px 0 0 50px; 
+}
+
+button{
+     margin: 0px 10px;
+     padding: 15px 20px;
+     font-size: 20px;
+     cursor: pointer;
+     border-radius: 10px;
+     background-color: #472718;
+     border: none;
+     outline: none;
+     color: #e5c27d;
+     transition: all 0.3s ease;
+}
+
+button:hover{
+    transform: scale(0.90);
+}
+
+.picture img{
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    height: 80%;
+    /* border: 1px solid; */
+}
+
